@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCDE4D7A-33F2-43F0-A53E-CEB92FABC9D9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMB.SOLID</RootNamespace>
+    <AssemblyName>LMB.SOLID</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1 - SRP\SRP.Solution\Customer.cs" />
+    <Compile Include="1 - SRP\SRP.Solution\CustomerInMemoryData.cs" />
+    <Compile Include="1 - SRP\SRP.Solution\CustomerRepository.cs" />
+    <Compile Include="1 - SRP\SRP.Solution\CustomerService.cs" />
+    <Compile Include="1 - SRP\SRP.Solution\EmailServices.cs" />
+    <Compile Include="1 - SRP\SRP.Solution\SsnServices.cs" />
+    <Compile Include="1 - SRP\SRP.Violation\Customer.cs" />
+    <Compile Include="2 - OCP\OCP.Solution\Account.cs" />
+    <Compile Include="2 - OCP\OCP.Solution\AtmMachineService.cs" />
+    <Compile Include="2 - OCP\OCP.Solution\DepositCheckingAccount.cs" />
+    <Compile Include="2 - OCP\OCP.Solution\DepositInvestingAccount.cs" />
+    <Compile Include="2 - OCP\OCP.Solution\DepositSavingsAccount.cs" />
+    <Compile Include="2 - OCP\OCP.Violation\AccountType.cs" />
+    <Compile Include="2 - OCP\OCP.Violation\Deposit.cs" />
+    <Compile Include="3 - LSP\LSP.Solution\AreaCalculatorService.cs" />
+    <Compile Include="3 - LSP\LSP.Solution\GeometricForm.cs" />
+    <Compile Include="3 - LSP\LSP.Solution\Parallelogram.cs" />
+    <Compile Include="3 - LSP\LSP.Solution\Rectangle.cs" />
+    <Compile Include="3 - LSP\LSP.Solution\Square.cs" />
+    <Compile Include="3 - LSP\LSP.Violation\AreaCalculator.cs" />
+    <Compile Include="3 - LSP\LSP.Violation\Rectangle.cs" />
+    <Compile Include="3 - LSP\LSP.Violation\Square.cs" />
+    <Compile Include="4 - ISP\ISP.Solution\CustomerRegistration.cs" />
+    <Compile Include="4 - ISP\ISP.Solution\Contracts\ICustomer.cs" />
+    <Compile Include="4 - ISP\ISP.Solution\Contracts\IProduct.cs" />
+    <Compile Include="4 - ISP\ISP.Solution\ProductRegistration.cs" />
+    <Compile Include="4 - ISP\ISP.Solution\RegistrationService.cs" />
+    <Compile Include="4 - ISP\ISP.Violation\CustomerRegistration.cs" />
+    <Compile Include="4 - ISP\ISP.Violation\IRegistration.cs" />
+    <Compile Include="4 - ISP\ISP.Violation\ProductRegistration.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\Customer.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\CustomerInMemoryData.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\CustomerRepository.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\CustomerService.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\EmailServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\Contracts\ISsnServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\Contracts\IEmailServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\Contracts\ICustomerRepository.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\Contracts\ICustomer.cs" />
+    <Compile Include="5 - DIP\DIP.Solution\SsnServices.cs" />
+    <Compile Include="5 - DIP\DIP.Violation\CustomerService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
