@@ -1,5 +1,7 @@
 # SOLID Principles
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=26TY9QLTDWDSE&lc=US&item_name=leandroberti&item_number=github&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
+
 ## What is SOLID?
 
 The SOLID principles are five programming principles which is considered to be the foundation of every well designed application.
@@ -142,3 +144,9 @@ What changes here (from SRP solution) is that all classes have a new constructor
 All the service instances are created outside and injected back into the classes. This is called Inversion of Control (IoC).
 
 Doing this way, if we need other kind of implementation for the services, it can be done without we have to change the implementation of the classes that use the services. Only we have to do here, is respect the interface implementation.
+
+# Donations
+
+**If you enjoy this work, please consider supporting me for developing and maintaining this (and others) templates.**
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=26TY9QLTDWDSE&lc=US&item_name=leandroberti&item_number=github&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
