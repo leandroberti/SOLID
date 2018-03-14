@@ -1,6 +1,6 @@
 # SOLID Principles
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=26TY9QLTDWDSE&lc=US&item_name=leandroberti&item_number=github&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
+[![Donate](https://img.shields.io/badge/Donate-PayPal.Me-green.svg)](http://paypal.me/leandroberti)
 
 ## What is SOLID?
 
@@ -150,3 +150,4 @@ Doing this way, if we need other kind of implementation for the services, it can
 **If you enjoy this work, please consider supporting me for developing and maintaining this (and others) templates.**
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=26TY9QLTDWDSE&lc=US&item_name=leandroberti&item_number=github&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
+[![Donate](https://img.shields.io/badge/Donate-PayPal.Me-green.svg)](http://paypal.me/leandroberti)
